@@ -18,7 +18,7 @@ const handleSubmit = async (e) => {
     formData.append("phone", phone);
     formData.append("comments", comments);
 
-    const response = await fetch("theclickfunneltest/src/Components/mail.class.php", {
+    const response = await fetch("theclickfunneltest/src/Components/php-mailer.php", {
         method: "POST",
         body: fromdata,
     });
