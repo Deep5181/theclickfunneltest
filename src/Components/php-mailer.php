@@ -13,7 +13,7 @@ try {
     $mail->Username = 'info@theclickfunnel.com';
     $mail->Password = 'Pn[kqXH}Ca;b';
     $mail->SMTPSecure = 'tls';
-    $mail->Port = 587;
+    $mail->Port = 465;
 
     $mail->setFrom($_POST['email'], $_POST['name']);
     $mail->addAddress('dc9958211@gmail.com'); // Your receiving email
