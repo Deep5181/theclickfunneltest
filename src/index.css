@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+html,
+body {
+  background-color: #000000;
+  color: #fefdfd;
+  /* cursor: none !important; */
+}
+
+::selection {
+  background-color: red;
+  color: white;
+}
+
+/* Custom Cursor */
+.custom-cursor {
+  width: 24px;
+  height: 24px;
+  background-color: white;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: difference; /* Inverts colors dynamically */
+  transition: transform 0.15s ease-out;
+}
+
+/* Hide cursor on mobile */
+@media (max-width: 768px) {
+  .custom-cursor {
+    display: none;
+  }
+}
