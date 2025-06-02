@@ -18,7 +18,7 @@ const handleSubmit = async (e) => {
     formData.append("phone", phone);
     formData.append("comments", comments);
 
-    const response = await fetch("D:/deepak/Source/reactapp/src/Components/php-mailer.php", {
+    const response = await fetch("D:/deepak/Source/reactapp/src/Components/mail.class.php", {
         method: "POST",
         body: fromdata,
     });
